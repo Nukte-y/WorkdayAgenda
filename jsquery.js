@@ -15,5 +15,17 @@ for (var key in hoursOfDay){              // creating timeblocks
     saveButton.addClass("saveBtn").css({flex:"1"});
     timeBlock.append(hourEl,textInput,saveButton);   //append timeblock elements under the parent element
     container.append(timeBlock);
-}
+    hourEl.text(hoursOfDay[key]);                    //get content from the hoursOfDay object
+    
+    if(Number(key)<currentHour){                     //creating colorcode with related classes
+        textInput.addClass("past")                   
+    }                                                //days.hour returns number and object property key is string
+    else if(Number(key) === currentHour){            //so to compare them first convert string to Number 
+        textInput.addClass("present")
+    }
+    else{
+        textInput.addClass("future");
+    }
+}  
+ 
  
