@@ -26,6 +26,9 @@ for (var key in hoursOfDay){              // creating timeblocks
     else{
         textInput.addClass("future");
     }
+
+    var saveIcon=$("<i>").appendTo(saveButton);
+    saveIcon.addClass("bi bi-floppy");
 }  
  
  
