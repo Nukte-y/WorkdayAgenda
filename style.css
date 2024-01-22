@@ -6,11 +6,19 @@ body {
 
 textarea {
   background: transparent;
-  border: none;
+  border: transparent;
+  border-left: #000000;
+  border-right: #000000;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+}
+
+textarea:focus{
+  border:solid #06aed5;
+  outline:none;
+  border-width: 3px;
 }
 
 header {
@@ -32,6 +40,7 @@ header {
 }
 
 .row {
+  margin-top: 1px;
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
@@ -45,25 +54,26 @@ header {
 
 .past {
   background-color: #d3d3d3;
-  color: white;
+  color: #000000;
 }
 
 .present {
   background-color: #ff6961;
-  color: white;
+  color: #000000;
 }
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: #000000;
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border: transparent;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  border-left: 1px solid #000000;
 }
 
 .saveBtn i:hover {

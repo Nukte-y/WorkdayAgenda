@@ -7,11 +7,11 @@ var hoursOfDay= {9:"9AM", 10:"10AM", 11:"11AM", 12:"12PM", 13:"1PM", 14:"2PM", 1
 for (var key in hoursOfDay){              // creating timeblocks 
 
     var timeBlock=$("<div>").addClass("row")
-    var hourEl=$("<h2>");                      
+    var hourEl=$("<div>");                      
     var textInput=$("<textarea>");            
     var saveButton=$("<button>");             
     
-    hourEl.addClass("hour").css({flex:"1"});         //added relevant classes to timeblock elements    
+    hourEl.addClass("hour").css({display:"flex",flex:"1",justifyContent:"center",paddingTop:"20px"});         //added relevant classes to timeblock elements    
     textInput.css({flex:"10"});
     saveButton.addClass("saveBtn").css({flex:"1"});
     timeBlock.append(hourEl,textInput,saveButton);   //append timeblock elements under the parent element
