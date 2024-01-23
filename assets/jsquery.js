@@ -34,6 +34,22 @@ for (var key in hoursOfDay){              // creating timeblocks
     // $(".container").text("saved to localStorage");    
 }  
 
+function timeChecker() {
+    
+    textInput.removeClass("past present future");            //prevent adding classes repeatedly
+    
+    if(Number(key)<currentHour){                     
+        textInput.addClass("past")                   
+    }                                                
+    else if(Number(key) === currentHour){             
+        textInput.addClass("present")
+    }
+    else{
+        textInput.addClass("future");
+    } 
+}
+setInterval(timeChecker,60000)                              //each min will check the blocks colors
+
 function messageTimer(){                                     //clear message displaying after 800msec
     var timer = setInterval(function() {
             messageBox.css({display: "none"});
