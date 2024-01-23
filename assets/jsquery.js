@@ -34,7 +34,7 @@ for (var key in hoursOfDay){              // creating timeblocks
 }  
 
 function timeChecker() {
-    currentHour=dayjs().hour();                              //to get current hour after each min
+    currentHour=dayjs().hour();                              //to get current hour dynamically after each min
     $("textarea").each(                                      // added function works for each textarea
         function (){
             let hour = this.dataset.hour;                    //with data-hour attribute now I can get hour value of the textarea
