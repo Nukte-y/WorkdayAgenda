@@ -24,11 +24,10 @@ An editable daily schedule with hourly slots.
 
 Enhance your productivity and stay organized with our intuitive agenda application!
 
-
-<img src="./images/127.0.0.1_5500_index.html (1).png">
-<img src="./images/Screenshot 2024-01-23 170030.png">
-
-
+<div style="display: flex; gap: 20px;">
+  <img src="./images/127.0.0.1_5500_index.html (1).png" width="300">
+  <img src="./images/Screenshot 2024-01-23 170030.png" width="400">
+</div>
 
 ## Credits
 N/A
