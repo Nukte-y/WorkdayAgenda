@@ -6,7 +6,7 @@ An editable daily schedule with hourly slots.
 
  A dynamic agenda, featuring editable hourly slots. Easily save your thoughts, plans, or important notes  for future reference. The color-coded design adapts to the current hour, offering a visual guide for seamless organization and navigation.
 
- You can access the quiz page at https://nukte-y.github.io/WorkdayAgenda/
+ You can access the page at https://nukte-y.github.io/WorkdayAgenda/
 
 ## Usage
 
